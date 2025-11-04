@@ -1,0 +1,21 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Solidity files
+*.sol text
+
+# JavaScript files
+*.js text
+*.json text
+*.ts text
+*.tsx text
+
+# Documentation
+*.md text
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+
