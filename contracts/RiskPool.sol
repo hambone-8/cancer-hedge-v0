@@ -186,7 +186,7 @@ contract RiskPool {
     function submitClaim() external whenNotPaused {
         require(enrollments[msg.sender].isActive, "User not enrolled");
         require(!enrollments[msg.sender].hasClaimed, "User has already claimed");
-        require(!claims[msg.sender].timestamp > 0, "Claim already submitted");
+        require(claims[msg.sender].timestamp == 0, "Claim already submitted");
         
         // Check waiting period
         require(
